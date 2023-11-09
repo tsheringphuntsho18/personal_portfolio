@@ -1,0 +1,133 @@
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+/* Define the landing page layout */
+.portfolio {
+    display: flex;
+    height: 100vh;
+    /*overflow: auto;*/
+}
+/* Style the left section with a white background */
+.left-section {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+}
+.logo {
+    position: absolute;
+    top: 3%;
+    left: 10%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    font-family: 'Kaushan Script', cursive; /* Apply Kaushan Script font */
+    font-size: 24px;
+    margin: 10px;
+    color: #01F9C6; /* Green text color */
+    display: inline-block;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add the dark shadow effect */
+}
+/* Style the right section with a green background */
+.right-section {
+    flex: 1;
+    background-color:#fff;
+    padding: 20px;
+}
+/* Style the navigation bar */
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-top: 40px; /* Adjust the top margin as needed */
+}
+.navbar li {
+    margin: 0 30px;
+}
+.navbar a:not(.portfolio-button) {
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 20px;
+   
+}
+.navbar .contact-icon i {
+    transform: rotate(90deg); /* Rotate the phone icon 90 degrees */
+}
+.navbar a:not(.portfolio-button):hover {
+    color: #fff; /* White text color on hover */
+    background-color: #000; /* Black background color on hover */
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+/* Style the "About Me" button */
+.portfolio-button {
+    color:#fff; /* Set the text color to black */
+    background-color: #000; /* Set the background color to white */
+    transition: none; /* Remove the transition effect */
+    padding: 5px 10px; /* Adjust padding as needed */
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+/* Styles for the toggle container */
+.toggle-container {
+    position: relative;
+    display: inline-block;
+    top: -45px; /* Adjust the top position to position it from the top */
+    right: -750px;
+    width: 60px;
+    height: 34px;
+}
+  
+/* Styles for the toggle checkbox */
+.toggle-checkbox {
+    display: none;
+}
+  
+  /* Styles for the toggle label (visual appearance) */
+.toggle-label {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 34px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: background-color 0.3s;
+}
+  
+/* Styles for the checked state of the toggle switch */
+.toggle-checkbox:checked + .toggle-label {
+    background-color: #27ae60; /* Change the background color when checked */
+}
+  
+/* Styles for the toggle handle (circle) */
+.toggle-label::before {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: white;
+    top: 4px;
+    left: 4px;
+    transition: transform 0.3s;
+}
+  
+/* Styles for the handle's position when checked */
+.toggle-checkbox:checked + .toggle-label::before {
+transform: translateX(26px); /* Move the handle to the right when checked */
+}
+ /* Style the copyright paragraph */
+.copyright {
+    color:#000; /* Text color */
+    padding: 10px; /* Add padding for spacing */
+    position: fixed;
+    bottom: 0; /* Position the copyright at the bottom of the viewport */
+}
