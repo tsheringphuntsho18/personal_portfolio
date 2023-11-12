@@ -1,4 +1,4 @@
-/* Reset some default styles */
+/*light mode */
 body, h1, p {
     margin: 0;
     padding: 0;
@@ -20,7 +20,7 @@ body, h1, p {
     left: 10%;
     transform: translate(-50%, 0);
     text-align: center;
-    font-family: 'Kaushan Script', cursive; /* Apply Kaushan Script font */
+    font-family: 'Kaushan Script'; /* Apply Kaushan Script font */
     font-size: 24px;
     margin: 10px;
     color: #01F9C6; /* Green text color */
@@ -53,6 +53,8 @@ body, h1, p {
 }
 /* Style the navigation bar */
 .navbar ul {
+    position: absolute;
+    left: 51%;
     list-style: none;
     padding: 0;
     display: flex;
@@ -104,12 +106,11 @@ body, h1, p {
 .toggle-container {
     position: relative;
     display: inline-block;
-    top: -45px; /* Adjust the top position to position it from the top */
-    right: -750px;
+    top: 35px; /* Adjust the top position to position it from the top */
+    left: 81.5%;
     width: 60px;
-    height: 34px;
-}
-  
+    height: 35px;
+} 
 /* Styles for the toggle checkbox */
 .toggle-checkbox {
     display: none;
@@ -169,3 +170,14 @@ transform: translateX(26px); /* Move the handle to the right when checked */
     top: 0;
     left: 37%;
  }
+ @media only screen and (max-width: 767px) {
+    /* Styles for small screens */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+}
+
+@media only screen and (min-width: 992px) {
+    /* Styles for large screens */
+}

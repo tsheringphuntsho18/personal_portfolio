@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="contactstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="contact">
@@ -51,7 +52,7 @@
 
             <div class="email-form-container">
                 <h2>Send me an email</h2>
-                <form action="#" method="post">
+                <form id="emailForm" action="sendmail.php" method="post" onsubmit="submitForm();">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
         
