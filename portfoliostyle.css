@@ -21,7 +21,7 @@ body, h1, p {
     left: 10%;
     transform: translate(-50%, 0);
     text-align: center;
-    font-family: 'Kaushan Script', cursive; /* Apply Kaushan Script font */
+    font-family: 'Kaushan Script'; /* Apply Kaushan Script font */
     font-size: 24px;
     margin: 10px;
     color: #01F9C6; /* Green text color */
@@ -130,4 +130,73 @@ transform: translateX(26px); /* Move the handle to the right when checked */
     padding: 10px; /* Add padding for spacing */
     position: fixed;
     bottom: 0; /* Position the copyright at the bottom of the viewport */
+}
+img {
+    width: 200px;
+    height: auto;
+    position:absolute;
+    top: 25%;
+    left:12%;
+}
+.head {
+    position: absolute;
+    top: 25%;
+    left: 25.5%;
+    font-size: 20px;
+}
+.automation {
+    position: absolute;
+    top: 27%;
+    left: 13%;
+    text-align: left;
+    font-size: 20px;
+    font-family:'karma';
+}
+img.leetcode-image {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+}
+.leetcode{
+    position: absolute;
+    top: 60%;
+    left: 39%;
+    font-size: 23px;
+    font-family: 'karma';
+}
+.button {
+    display: inline-block;
+    padding: 20px 100px;
+    background-color: #4c8baf;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    font-size: 20px;
+}
+
+/* Hover effect */
+.button:hover {
+    background-color: #3b6e91;
+}
+.profile {
+    display: inline-block;
+    padding: 20px 100px;
+    background-color: #4c8baf;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 73%;
+    left: 53.5%;
+    font-size: 20px;
+}
+
+/* Hover effect */
+.profile:hover {
+    background-color: #3b6e91;
 }

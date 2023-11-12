@@ -157,3 +157,15 @@ transform: translateX(26px); /* Move the handle to the right when checked */
     position: absolute;
     bottom: 0; /* Position the copyright at the bottom of the viewport */
 }
+.coding {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    width: 30%;
+    height: auto;
+ }
+ .lamp {
+    position: absolute;
+    top: 0;
+    left: 37%;
+ }

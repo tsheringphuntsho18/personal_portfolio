@@ -7,6 +7,9 @@
 </head>
 <body>
     <div class="about_me">
+        <div class="custom-line1"></div>
+        <div class="custom-line2"></div>
+        <div class="custom-line3"></div>
         <div class="left-section">
             <a href="index.html">
                 <div class="logo">
@@ -22,12 +25,22 @@
                 B.E in Software Engineering at college 
                 of science and technology.
             </pre>
-            <img src="bulb.png" alt="idea" class="bulb">
+            <img src="assets/bulb.png" alt="idea" class="bulb">
             <div class="designer">
                 <p>UI design</p>
                 <p>UX design</p>
                 <p>Figma</p>
             </div> 
+            <pre class="weakness">
+                Perfectionism
+                 * I often spend more
+                   time on a 
+                   particular task
+                   until i get Perfect result.
+            </pre>
+            <div class="semi-circle">
+                <p class="text"><b>Designer</b></p>
+            </div>
         </div>
         <div class="right-section">
             <nav class="navbar">
@@ -41,9 +54,13 @@
                 <input type="checkbox" id="custom-toggle" class="toggle-checkbox">
                 <label for="custom-toggle" class="toggle-label"></label>
             </div> 
-            <section id="about">
-                <img src="me.png" alt="My Picture">
-            </section> 
+            <img src="assets/me.png" alt="Glowing Image" class="glow-image" onclick="toggleGlow(this)">
+    
+            <script>
+                function toggleGlow(element) {
+                element.classList.toggle("glow-image-active");
+                }
+            </script>
             <pre class="info">
                 I'm passionate about technology and
                 innovation. I enjoy turning complex problem
@@ -53,7 +70,18 @@
                 <p>Html/Css</p>
                 <p>Python</p>
                 <p>Leetcode</p>
-            </div>                             
+            </div> 
+            <div class="semi-circle2">
+                <p class="text2"><b>Coder</b></p>
+            </div>
+            <img src="assets/strength n weakness.jpeg" alt="strength and weakness picture" class=" snw">  
+            <pre class="strength">
+                1. Have patience
+                2. Perform best as a Team
+                3. Quickly adapt to new 
+                   working environment
+                4. Communication
+            </pre>                          
         </div>
     </div>
 </body>

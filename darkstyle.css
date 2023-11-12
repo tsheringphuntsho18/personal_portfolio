@@ -4,13 +4,14 @@ body, h1, p {
     padding: 0;
 }
 /* Define the landing page layout */
-.contact {
+.landing-page {
     display: flex;
-    height: 100vh;}
+    height: 100vh;
+}
 /* Style the left section with a white background */
 .left-section {
     flex: 1;
-    background-color: #fff;
+    background-color: #000;
     padding: 20px;
 }
 .logo {
@@ -22,14 +23,32 @@ body, h1, p {
     font-family: 'Kaushan Script', cursive; /* Apply Kaushan Script font */
     font-size: 24px;
     margin: 10px;
-    color: #01F9C6; /* Green text color */
+    color: #e799a3; /* Green text color */
     display: inline-block;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add the dark shadow effect */
+}
+/* Position the right content */
+.content {
+    position: absolute;
+    top: 25%; /* Adjust the top position as needed */
+    left: 12%; /* Adjust the left position as needed */
+    transform: translate(-50%, 0); /* Center horizontally */
+    text-align: center;
+}
+/* Increase the font size of the text "Designer" */
+.designer-text {
+    font-size: 50px; /* Adjust the font size as needed */
+    font-family: 'Lalezer'; /* Apply Lazur font */
+}
+.d-text{
+    font-size: 25px;
+    font-family: 'Karma';
+    margin-top: 20px; /* Add spacing above the paragraph */
 }
 /* Style the right section with a green background */
 .right-section {
     flex: 1;
-    background-color:#fff;
+    background-color:  #550a35;
     padding: 20px;
 }
 /* Style the navigation bar */
@@ -43,7 +62,7 @@ body, h1, p {
 .navbar li {
     margin: 0 30px;
 }
-.navbar a:not(.contact-button) {
+.navbar a {
     text-decoration: none;
     color: #000;
     background-color: #fff;
@@ -56,21 +75,30 @@ body, h1, p {
 .navbar .contact-icon i {
     transform: rotate(90deg); /* Rotate the phone icon 90 degrees */
 }
-.navbar a:not(.contact-button):hover {
+
+    /* Position the right content */
+.right-content {
+    position: absolute;
+    top: 25%; /* Adjust the top position as needed */
+    left: 85%; /* Adjust the left position as needed */
+    transform: translate(-50%, 0); /* Center horizontally */
+    text-align: center;
+}
+.coder-text {
+    font-size: 50px; /* Adjust the font size as needed */
+    font-family: 'Lalezer'; /* Apply Lazur font */
+}
+.c-text{
+    font-size: 25px;
+    font-family: 'Karma';
+    margin-top: 20px; /* Add spacing above the paragraph */
+
+}
+.navbar a:hover {
     color: #fff; /* White text color on hover */
     background-color: #000; /* Black background color on hover */
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
-}
-/* Style the "About Me" button */
-.contact-button {
-    color:#fff; /* Set the text color to black */
-    background-color: #000; /* Set the background color to white */
-    transition: none; /* Remove the transition effect */
-    padding: 5px 10px; /* Adjust padding as needed */
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 20px;
 }
 /* Styles for the toggle container */
 .toggle-container {
@@ -79,7 +107,7 @@ body, h1, p {
     top: -45px; /* Adjust the top position to position it from the top */
     right: -750px;
     width: 60px;
-    height: 39px;
+    height: 34px;
 }
   
 /* Styles for the toggle checkbox */
@@ -126,101 +154,6 @@ transform: translateX(26px); /* Move the handle to the right when checked */
 .copyright {
     color:#000; /* Text color */
     padding: 10px; /* Add padding for spacing */
-    position: fixed;
+    position: absolute;
     bottom: 0; /* Position the copyright at the bottom of the viewport */
-}
-.social {
-    position: absolute;
-    top: 200px;
-    left: 150px;
-    font-size: 25px;
-    font-family: "Karma";
-}
-.image-container {
-    display: flex;
-    flex-direction: column; /* Align images vertically */
-    align-items:normal; /* Align items to the start of the cross axis (vertical) */
-    justify-content: center; /* Center items along the main axis (horizontal) */
-    margin-top: 270px; /* Add space at the top of the container */
-    margin-left: 210px;
-}
-
-img {
-    width: 70px; /* Set the desired width for all images */
-    height: auto;
-    margin-bottom: 60px; /* Add space between images */
-}
-.facebook-text {
-    position: absolute;
-    top: 30%;
-    left: 17%;
-    font-size: 200%;
-    font-family: "Karma";
-    color: #0172B1;
-}
-.insta-text {
-    position: absolute;
-    top: 43%;
-    left: 17%;
-    font-size: 200%;
-    font-family: "Karma";
-    color: #FE0959;
-}
-.linkedin-text {
-    position: absolute;
-    top: 56%;
-    left: 17%;
-    font-size: 200%;
-    font-family: "Karma";
-    color: #0172B1;
-}
-.github-text {
-    position: absolute;
-    top: 69%;
-    left: 17%;
-    font-size: 200%;
-    font-family: "Karma";
-    color: #000;
-}
-a {
-    text-decoration: none; /*remove underline */
-    color: inherit; /* Inherit the color from the parent (normal text color) */
-}
-.email-form-container {
-    position: relative;
-    top: 8%;
-    right: 30%;
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 15px;
-    border-radius: 5px;
-    font-size: 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-bottom: 5px;
-}
-
-input, textarea {
-    padding: 15px;
-    margin-bottom: 20px;
-}
-
-input[type="submit"] {
-    background-color: #4b9eec;
-    color:#fff;
-    cursor: pointer;
-    border:none;
-    padding: 20px;
-    border-radius: 5px;
-    font-size: 20px;
-}
-
-input[type="submit"]:hover {
-    background-color: #2573da;
 }

@@ -152,12 +152,12 @@ transform: translateX(26px); /* Move the handle to the right when checked */
 }
 .bulb {
     position: absolute;
-    top:80%;
+    top:70%;
     left: 3%;
 }
 .info {
     position: absolute;
-    top: 90%; /* Adjust the top position as needed */
+    top: 80%; /* Adjust the top position as needed */
     left: 55%; /* Adjust the left position as needed */
     transform: translate(-50%, 0); /* Center horizontally */
     text-align: justify;
@@ -167,21 +167,126 @@ transform: translateX(26px); /* Move the handle to the right when checked */
 }
 .designer {
     position: absolute;
-    top: 130%;
-    left: 20%;
+    top: 120%;
+    left: 25%;
     transform: translate(-50%, 0); /* Center horizontally */
     text-align: justify;
     font-size: 40px;
     font-family: 'Karma';
-    margin-top: 20px; /* Add spacing above the paragraph */
+    margin-top: 5px; /* Add spacing above the paragraph */
 }
 .coder {
     position: absolute;
-    top: 130%;
-    left: 55%;
+    top: 120%;
+    left: 65%;
     transform: translate(-50%, 0); /* Center horizontally */
     text-align: justify;
     font-size: 40px;
     font-family: 'Karma';
-    margin-bottom: 20px; /* Add spacing above the paragraph */
+    margin-top: 5px; /* Add spacing above the paragraph */
+}
+p {
+    margin-top: 40px;
+}
+.snw {
+    position: absolute;
+    top: 165%;
+    left: 38%
+}
+.weakness {
+    position: absolute;
+    top: 165%;
+    left: 6%;
+    font-size: 30px;
+    font-family: 'karma';
+}
+.strength {
+    position: absolute;
+    top: 165%;
+    left: 45%;
+    font-size: 30px;
+    font-family: 'karma';
+}
+.semi-circle {
+    width: 350px;
+    height: 200px;
+    background-color: #b3b0b0;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 125%;
+    left: 30%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid black;
+}
+.semi-circle2 {
+    width: 350px;
+    height: 200px;
+    background-color: #706e6e;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    transform: rotate(270deg);
+    position: absolute;
+    top: 125%;
+    left: 43%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid black;
+}
+.text {
+    position: absolute;
+    top: 20%;
+    left: 22%;
+    font-size: 40px;
+    transform:rotate(270deg);
+    color: #fff;
+    font-family: 'Lilita One';
+
+}
+.text2 {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    font-size: 40px;
+    transform:rotate(90deg);
+    color: #fff;
+}
+.glow-image {
+    width: 600px;
+    height: auto;
+    transition: box-shadow 0.3s; /* Add smooth transition for the glow effect */
+    position: absolute;
+    top: 15%;
+    left: 47%;
+}
+
+.glow-image:hover {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 0, 0.7); /* Glow effect on hover */
+}
+.custom-line1 {
+    width: 100%;
+    height: 1px; /* Set the thickness of the line */
+    background-color: #e4e1e1; /* Set the color of the line */
+    margin: 20px 0; /* Add some space around the line */
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 65%;
+}
+.custom-line2 {
+    width: 100%;
+    height: 1px; /* Set the thickness of the line */
+    background-color: #e4e1e1; /* Set the color of the line */
+    margin: 20px 0; /* Add some space around the line */
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 110%;
+}
+.custom-line3 {
+    width: 100%;
+    height: 1px; /* Set the thickness of the line */
+    background-color: #e4e1e1; /* Set the color of the line */
+    margin: 20px 0; /* Add some space around the line */
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 155%;
 }
